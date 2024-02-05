@@ -1,0 +1,26 @@
+{
+  "name": "tenant-db-sync",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "repository": "git@github.com:SamirSir/tenant-db-sync.git",
+  "author": "SamirSir <acharyasamir421@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist",
+    "build:watch": "tsc --watch",
+    "start:watch": "nodemon dist",
+    "start:dev": "nodemon --exec ts-node --type-check src",
+    "clean": "rm -rf ./dist"
+  },
+  "dependencies": {
+    "cron": "^3.1.6",
+    "node-cron": "^3.0.3",
+    "node-schedule": "^2.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}
